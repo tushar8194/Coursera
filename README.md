@@ -1,7 +1,9 @@
 1. .reduce(_-_) Operation :
+
 => This is non associative operation and that will give nondeterministic results
 
 2. Why Spark ?
+
     (a) Spark has better fault tolerent management. 
         It uses functional programing power of immutability and in-memory. Stores all transformation and can re-generate RDDs.
 

@@ -18,8 +18,10 @@
 
 	(a) RDD is like Immutable scala collection.
 
-	(b)	Most operation on RDD are like higher order funciton, means taking a functions as an argument and returning a RDD.
+	(b) Most operation on RDD are like higher order funciton, means taking a functions as an argument and returning a RDD.
 
 	(c) Can be created by transformation on existing RDD or using 
+	
 		sc.parallelize : convert scala collection to RDD.
+		
 		sc.textfile : read text file and return RDD[String]

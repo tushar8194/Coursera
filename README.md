@@ -1,4 +1,4 @@
-1. .reduce(_-_) Operation :
+1. .reduce(\_-\_) Operation :
 
 => This is non associative operation and that will give nondeterministic results
 

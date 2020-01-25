@@ -25,6 +25,7 @@
 		sc.parallelize : convert scala collection to RDD.
 		
 		sc.textfile : read text file and return RDD[String]
+	(d) RDDs used to re-computed each you apply actions on them, otherwise cache or pewrsist them.
 
 4. Transformations / Actions
 Attempt | #1 | #2 | #3 | #4 | #5 | #6 | #7 | #8 | #9 | #10 | #11

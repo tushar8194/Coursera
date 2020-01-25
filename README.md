@@ -25,3 +25,5 @@
 		sc.parallelize : convert scala collection to RDD.
 		
 		sc.textfile : read text file and return RDD[String]
+
+4. Transformations / 

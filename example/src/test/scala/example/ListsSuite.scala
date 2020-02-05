@@ -21,6 +21,7 @@ import org.junit.Assert.assertEquals
     * which tests that its argument evaluates to `true`. So one of the simplest
     * successful tests is the following:
     */
+  
   @Test def `one plus one is two (0pts)`: Unit = {
     assert(1 + 1 == 2)
   }

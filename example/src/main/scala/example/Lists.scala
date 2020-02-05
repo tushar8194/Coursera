@@ -24,12 +24,10 @@ object Lists {
    * @param xs A list of natural numbers
    * @return The sum of all elements in `xs`
    */
-
-
   def sum(xs: List[Int]): Int = {
     xs match {
       case List() => 0
-      case head :: tail => head + sum(tail) 
+      case head :: tail => head + sum(tail)
     }
   }
 
@@ -46,18 +44,14 @@ object Lists {
    * @return The largest element in `xs`
    * @throws java.util.NoSuchElementException if `xs` is an empty list
    */
-
-  
- 
   def max(xs: List[Int]): Int = {
-
     @tailrec
     def getMax(xs: List[Int], currMax: Int) : Int = {
       xs match {
         case List() => currMax
         case x :: tail =>
           val newMax = if(x > currMax) x else currMax
-          getMax( tail,newMax)  
+          getMax( tail,newMax)
       }
     }
     if(!xs.isEmpty){
@@ -66,7 +60,6 @@ object Lists {
     else{
       throw new java.util.NoSuchElementException
     }
-    
-  }
 
+  }
 }

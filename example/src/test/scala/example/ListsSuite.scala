@@ -11,6 +11,7 @@ import org.junit.Assert.assertEquals
  *
  * To run this test suite, start "sbt" then run the "test" command.
  */
+
  class ListsSuite {
 
   /**

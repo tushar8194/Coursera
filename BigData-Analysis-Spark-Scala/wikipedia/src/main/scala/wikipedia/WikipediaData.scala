@@ -1,13 +1,19 @@
 package wikipedia
 
-import scala.io.Source
+import java.nio.charset.CodingErrorAction
+
+import scala.io.{Codec, Source}
 
 object WikipediaData {
+
+  implicit val codec = Codec("UTF-8")
+  codec.onMalformedInput(CodingErrorAction.REPLACE)
+  codec.onUnmappableCharacter(CodingErrorAction.REPLACE)
 
   private[wikipedia] def lines: List[String] = {
     Option(getClass.getResourceAsStream("/wikipedia/wikipedia.dat")) match {
       case None => sys.error("Please download the dataset as explained in the assignment instructions")
-      case Some(resource) => Source.fromInputStream(resource).getLines().toList
+      case Some(resource) => Source.fromInputStream(resource)(codec).getLines().toList
     }
   }
 

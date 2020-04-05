@@ -6,3 +6,6 @@ project/
 target/
 *iml
 *.DS_Store
+*.dat
+*.csv
+
